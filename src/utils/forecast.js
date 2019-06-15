@@ -19,7 +19,9 @@ request({url: url, json: true},(error, {body})=>{
 
                 summary:body.daily.data[0].summary,
                 temprature:body.currently.temperature,
-                precipitation:body.currently.precipProbability
+                precipitation:body.currently.precipProbability,
+                windSpeed:body.currently.windSpeed
+
             })
     }
 

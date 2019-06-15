@@ -31,7 +31,7 @@
         }
         else{
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.summary +' Temprature is '+ data.temprature +'. Precipitation chances is '+ data.precipitation +'. Address :' +data.address
+                messageTwo.textContent = data.summary +' Temprature is '+ data.temprature +'. Precipitation chances is '+ data.precipitation +'. Address :' +data.address+' windSpeed :'+data.windSpeed
         }
     })
   })
