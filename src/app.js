@@ -10,7 +10,7 @@ console.log(__dirname)
 console.log(path.join(__dirname,'../public'))
 
 const app = express()
-
+const port = process.env.PORT || 3000
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../template/views')
@@ -133,7 +133,7 @@ app.get('*', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
 
-    console.log('My Node is working')
+    console.log('My Node is working on port '+port)
 })
