@@ -1,4 +1,4 @@
-console.log('Client Scripting file is loaded.')
+
 
 
 
